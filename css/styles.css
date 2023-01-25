@@ -1,0 +1,198 @@
+:root {
+    --primary-font: 'Roboto', sans-serif; 
+    --primary-font-size: 16px;  
+    --primary-text-color: #434455;   
+    --secondary-text-color: #2E2F42;    
+    --primary-text-color-theme-dark: #E7E9FC;  
+    --secondary-text-color-theme-dark: #FFFFFF;
+    --primary-logo-text-color: #4D5AE5;
+    --logo-text-color-theme-light: #2E2F42;
+    --logo-text-color-theme-dark: #F4F4FD;    
+    --accent-color: #404BBF;
+    --button-color: #4D5AE5;
+    --secondary-button-color: #F4F4FD;
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #2E2F42;
+    --third-bg-color: #F4F4FD;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-size: var(--primary-font-size);    
+}
+
+
+/* ================== Components ======================= */
+
+.logo-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-logo-text-color);
+}
+
+.modal-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+    background-color: var(--button-color);
+    color: var(--secondary-text-color-theme-dark);
+    cursor: pointer;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--accent-color);
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.description {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondary-text-color);
+}
+/* =================== /Component ====================== */
+
+/* CТИЛІ index.html */
+
+/* ====================== Header ======================= */
+
+.theme-light {
+    color: var(--logo-text-color-theme-light);
+}
+
+.menu-link {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.contact-list-link {
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.contact-list-link:hover,
+.contact-list-link:focus {
+    color: var(--accent-color);
+}
+
+/* ========================== /Header ===================== */
+
+/* ============================= Hero ===================== */
+
+.style {
+    background-color: var(--secondary-bg-color);
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondary-text-color-theme-dark);
+}
+
+/* ============================ /Hero ====================== */
+
+/* =========================== Features ==================== */
+
+.name {
+    opacity: 0;
+}
+
+/* =========================== /Features =================== */
+
+/* ============================ Products =================== */
+
+/* ============================ /Products ================== */
+
+/* =============================== Team ==================== */
+
+.bg {
+    background-color: var(--third-bg-color);
+}
+
+/* =============================== /Team =================== */
+
+/* ============================= Footer ==================== */
+
+.theme-dark {
+    color: var(--logo-text-color-theme-dark);
+}
+
+.size {
+    line-height: 1.16;
+}
+
+.dark {
+    color: var(--primary-text-color-theme-dark);
+}
+
+/* =========================== /Footer ===================== */
+
+
+/* CТИЛІ portfolio.html */
+
+.filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
+    cursor: pointer;   
+    background-color: var(--secondary-button-color);
+    color: var(--button-color)         
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color-theme-dark)
+}
