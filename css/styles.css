@@ -86,6 +86,9 @@ body {
 	letter-spacing: 0.04em;
 	background-color: var(--button-color);
 	color: var(--secondary-text-color-theme-dark);
+	border: none;
+	border-radius: 4px;
+	padding: 16px 32px;	
 }
 
 .modal-btn:hover,
@@ -127,7 +130,7 @@ body {
 	padding-bottom: 24px;
 }
 
-.flex {
+.page-header-flex {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -194,8 +197,19 @@ body {
 
 /* ============================= Hero ===================== */
 
+.hero {
+	padding-top: 188px;
+	padding-bottom: 188px;	
+}
+
 .style {
 	background-color: var(--secondary-bg-color);
+}
+
+.hero-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
 }
 
 .main-title {
@@ -205,8 +219,15 @@ body {
 	text-align: center;
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
-	color: var(--secondary-text-color-theme-dark);
+	color: var(--secondary-text-color-theme-dark);		
+	width: 494px;
+	margin-bottom: 48px;
+	
 }
+
+
+
+
 
 /* ============================ /Hero ====================== */
 
