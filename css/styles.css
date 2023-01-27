@@ -201,18 +201,16 @@ body {
 
 .hero {
 	padding-top: 188px;
-	padding-bottom: 188px;	
+	padding-bottom: 188px;		
 }
 
 .style {
 	background-color: var(--secondary-bg-color);
 }
 
-.hero-flex {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex-wrap: wrap;	
+.hero-positioning {
+	text-align: center;
+	
 }
 
 .main-title {
@@ -223,9 +221,10 @@ body {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 	color: var(--secondary-text-color-theme-dark);
-	width: 494px;
+	width: 494px;	
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 48px;
-	
 }
 
 
@@ -262,7 +261,7 @@ body {
 }
 
 .features-item {
-	min-width: 264px;
+	flex-basis: calc((100% - 72px) / 4);
 } 
 
 /* =========================== /Features =================== */
@@ -277,6 +276,10 @@ body {
 .products-list {
 	display: flex;	
 	column-gap: 24px; 	
+}
+
+.product-list-item {
+	flex-basis: calc((100% - 48px) / 3);
 }
 
 /* ============================ /Products ================== */
@@ -297,13 +300,18 @@ body {
 	display: flex;
 	align-items: center;
 	column-gap: 24px;
-	text-align: center;	
-	border-radius: 0px 0px 4px 4px;
+	text-align: center;		
+}
+
+.team-list-item {
+	flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-member {
 	background-color: #fff;
 	padding: 32px 16px;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* =============================== /Team =================== */
@@ -320,11 +328,14 @@ body {
 }
 
 .size {
+	display: inline-block;
 	line-height: 1.16;
+	margin-bottom: 16px;
 }
 
 .dark {
 	color: var(--primary-text-color-theme-dark);
+	width: 264px;	
 }
 
 /* =========================== /Footer ===================== */
@@ -335,6 +346,18 @@ body {
 	border-bottom: 1px solid #E7E9FC;
 }
 
+.projects {
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+
+.filter {
+	display: flex;
+	justify-content: center;
+	column-gap: 24px;
+	margin-bottom: 72px;
+}
+
 .filter-btn {
 	font-family: inherit;
 	font-weight: 500;
@@ -342,6 +365,9 @@ body {
 	letter-spacing: 0.04em;
 	background-color: var(--secondary-button-color);
 	color: var(--button-color);
+	border: 1px solid #E7E9FC;
+	border-radius: 4px;
+	padding: 12px 24px;
 }
 
 .filter-btn:hover,
