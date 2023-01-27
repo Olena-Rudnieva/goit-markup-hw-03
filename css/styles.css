@@ -57,6 +57,14 @@ body {
 	font-size: var(--primary-font-size);
 }
 
+.container {
+	width: 1158px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 /* ================== Components ======================= */
 
 .logo-link {
@@ -113,6 +121,11 @@ body {
 /* CТИЛІ index.html */
 
 /* ====================== Header ======================= */
+
+.flex {
+	display: flex;
+	align-items: center;
+}
 
 .theme-light {
 	color: var(--logo-text-color-theme-light);
