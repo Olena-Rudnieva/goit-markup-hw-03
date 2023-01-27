@@ -122,13 +122,37 @@ body {
 
 /* ====================== Header ======================= */
 
+.page-header {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
 .flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.page-nav {
 	display: flex;
 	align-items: center;
 }
 
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+.logo-link {
+	margin-right: 76px;
+}
+
 .theme-light {
 	color: var(--logo-text-color-theme-light);
+}
+
+.menu-item:not(:last-child) {
+	margin-right: 40px;
 }
 
 .menu-link {
@@ -147,6 +171,13 @@ body {
 	color: var(--accent-color);
 }
 
+.contact-list {
+	display: flex;
+}
+
+.contact-list-item:not(:first-child) {
+	margin-left: 40px;
+}
 .contact-list-link {
 	font-style: normal;
 	line-height: 1.5;
