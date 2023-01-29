@@ -14,6 +14,7 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2e2f42;
   --third-bg-color: #f4f4fd;
+  --decoration-color: #e7e9fc;
 }
 
 h1,
@@ -75,6 +76,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-logo-text-color);
+  margin-right: 76px;
 }
 
 .modal-btn {
@@ -146,10 +148,6 @@ body {
 .menu {
   display: flex;
   align-items: center;
-}
-
-.logo-link {
-  margin-right: 76px;
 }
 
 .theme-light {
@@ -298,14 +296,14 @@ body {
 
 .team-list-item {
   flex-basis: calc((100% - 72px) / 4);
-}
-
-.team-member {
-  background-color: #fff;
-  padding: 32px 16px;
+  background-color: var(--primary-bg-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-member {
+  padding: 32px 16px; 
 }
 
 /* =============================== /Team =================== */
@@ -325,6 +323,7 @@ body {
   display: inline-block;
   line-height: 1.16;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 .dark {
@@ -337,7 +336,7 @@ body {
 /* CТИЛІ portfolio.html */
 
 .line {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--decoration-color);
 }
 
 .projects {
@@ -359,7 +358,7 @@ body {
   letter-spacing: 0.04em;
   background-color: var(--secondary-button-color);
   color: var(--button-color);
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--decoration-color);
   border-radius: 4px;
   padding: 12px 24px;
 }
@@ -368,6 +367,8 @@ body {
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color-theme-dark);
+  border: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-list {
@@ -386,5 +387,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-  border: 1px solid #e7e9fc;
+  border-right: 1px solid var(--decoration-color);
+  border-left: 1px solid var(--decoration-color);
+  border-bottom: 1px solid var(--decoration-color);
 }
